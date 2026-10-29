@@ -9,7 +9,8 @@
       "version": "1.0.0",
       "license": "Apache-2.0",
       "skills": [
-        "./skills/design-file-to-wordpress"
+        "./skills/design-file-to-wordpress",
+        "./skills/design-file-what-changed"
       ]
     }
   ]
