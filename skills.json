@@ -9,6 +9,16 @@
       "updated": "2026-10-23",
       "version": 4,
       "zip_url": "https://markzware.com/downloads/skills/design-file-to-wordpress.zip?v=4"
+    },
+    {
+      "description": "Compare two versions of an InDesign, Publisher, QuarkXPress, or PDF file and report the text and photos that changed.",
+      "id": "design-file-what-changed",
+      "min_omnimarkz_version": "5.8.0",
+      "name": "What changed between two versions",
+      "tutorial_url": "https://markzware.com/notifications/omnimarkz-2026/skills/design-file-what-changed",
+      "updated": "2026-10-29",
+      "version": 1,
+      "zip_url": "https://markzware.com/downloads/skills/design-file-what-changed.zip"
     }
   ]
 }
