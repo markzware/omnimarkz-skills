@@ -1,0 +1,14 @@
+{
+  "name": "omnimarkz",
+  "marketplace": "omnimarkz-skills",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "skills": "./skills/design-file-to-wordpress",
+  "interface": {
+    "displayName": "OmniMarkz",
+    "shortDescription": "Turn a design file into a WordPress draft.",
+    "developerName": "Markzware",
+    "websiteURL": "https://markzware.com",
+    "repository": "https://github.com/markzware/omnimarkz-skills"
+  }
+}
