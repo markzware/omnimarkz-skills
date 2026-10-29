@@ -66,6 +66,10 @@ https://markzware.com/downloads/skills/design-file-what-changed.zip
 
 The Cursor command above is not the ChatGPT install. The report stays on the Mac.
 
+## Changes
+
+See [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).

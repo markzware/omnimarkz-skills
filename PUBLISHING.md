@@ -11,5 +11,6 @@ Follow this order. The skill version, the zip, the redirect, the catalog in this
 7. The repository README and the skill-folder README link a WordPress post only after that post is published. While the post is a draft, those READMEs do not link it. Record that draft’s post id in this file when the draft is created.
 8. The skill version, the zip, the redirect, this repository’s catalog, the live catalog, and the Convert2IDML catalog copy all describe that same version before the change is on `main`. When this change creates or updates a WordPress draft, that draft describes that version and remains a draft.
 9. The plugin lists every skill folder on `main` and no skill that is not on `main`.
+10. Append a dated entry to `CHANGELOG.md` in that same commit. The heading is the date the change lands on `main`. The bullet names the skill and its integer. A change that does not bump a skill version, such as a README edit, still gets a line.
 
 `design-file-to-wordpress` already has a published guide, so this repository does not create a second post for it and does not record a draft post id for it.
