@@ -66,6 +66,24 @@ https://markzware.com/downloads/skills/design-file-what-changed.zip
 
 The Cursor command above is not the ChatGPT install. The report stays on the Mac.
 
+## Social image and caption
+
+Make a social image and a caption from an InDesign, Publisher, QuarkXPress, or PDF file. You name the social site. The image stays on the Mac. This skill does not post to a social network.
+
+### Cursor
+
+```bash
+npx skills add markzware/omnimarkz-skills --skill design-file-social-image -g
+```
+
+### ChatGPT
+
+ChatGPT installs the skill by downloading the zip:
+
+https://markzware.com/downloads/skills/design-file-social-image.zip
+
+The Cursor command above is not the ChatGPT install. The image stays on the Mac.
+
 ## Changes
 
 See [CHANGELOG.md](CHANGELOG.md).

@@ -19,6 +19,16 @@
       "updated": "2026-10-29",
       "version": 1,
       "zip_url": "https://markzware.com/downloads/skills/design-file-what-changed.zip"
+    },
+    {
+      "description": "Make a social image and a caption from an InDesign, Publisher, QuarkXPress, or PDF file.",
+      "id": "design-file-social-image",
+      "min_omnimarkz_version": "5.8.0",
+      "name": "Social image and caption",
+      "tutorial_url": "https://markzware.com/notifications/omnimarkz-2026/skills/design-file-social-image",
+      "updated": "2026-10-29",
+      "version": 1,
+      "zip_url": "https://markzware.com/downloads/skills/design-file-social-image.zip"
     }
   ]
 }

@@ -14,3 +14,5 @@ Follow this order. The skill version, the zip, the redirect, the catalog in this
 10. Append a dated entry to `CHANGELOG.md` in that same commit. The heading is the date the change lands on `main`. The bullet names the skill and its integer. A change that does not bump a skill version, such as a README edit, still gets a line.
 
 `design-file-to-wordpress` already has a published guide, so this repository does not create a second post for it and does not record a draft post id for it.
+
+`design-file-social-image` draft post id 63459, slug `design-file-social-image`, left as a draft. The tutorial URL is the redirect, not `https://markzware.com/?p=63459`.
