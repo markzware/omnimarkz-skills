@@ -4,6 +4,12 @@ Agent skills for OmniMarkz. This repository is the install and usage page.
 
 Connect OmniMarkz from **OmniMarkz → Preferences → MCP** before using a skill. OmniMarkz MCP is the local app you connect there. This repository does not give a remote URL for that MCP server.
 
+## Cursor
+
+```bash
+npx skills add markzware/omnimarkz-skills --skill '*' -g -y
+```
+
 ## Claude
 
 ```text
@@ -18,7 +24,7 @@ codex plugin marketplace add markzware/omnimarkz-skills
 codex plugin add omnimarkz@omnimarkz-skills
 ```
 
-Those plugin commands install every skill in this repository.
+Those commands install every skill in this repository. Each skill section below has the Cursor command for that skill alone.
 
 ## WordPress draft from a design file
 
