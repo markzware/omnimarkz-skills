@@ -26,6 +26,11 @@ codex plugin add omnimarkz@omnimarkz-skills
 
 Those commands install every skill in this repository. Each skill section below has the Cursor command for that skill alone.
 
+- [WordPress draft from a design file](#wordpress-draft-from-a-design-file)
+- [What changed between two versions](#what-changed-between-two-versions)
+- [Social image and caption](#social-image-and-caption)
+- [Slides from a design file](#slides-from-a-design-file)
+
 ## WordPress draft from a design file
 
 ### Cursor
