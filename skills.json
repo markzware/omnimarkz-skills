@@ -29,6 +29,16 @@
       "updated": "2026-10-29",
       "version": 1,
       "zip_url": "https://markzware.com/downloads/skills/design-file-social-image.zip"
+    },
+    {
+      "description": "Turn an InDesign, Publisher, QuarkXPress, or PDF file into a PowerPoint in reading order.",
+      "id": "design-file-slides",
+      "min_omnimarkz_version": "5.8.0",
+      "name": "Slides from a design file",
+      "tutorial_url": "https://markzware.com/notifications/omnimarkz-2026/skills/design-file-slides",
+      "updated": "2026-10-30",
+      "version": 1,
+      "zip_url": "https://markzware.com/downloads/skills/design-file-slides.zip"
     }
   ]
 }

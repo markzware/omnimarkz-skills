@@ -2,6 +2,12 @@
 
 Notable changes to the skills in this repository. Each skill has its own version number. A heading is the date that change landed on `main`.
 
+## 2026-10-30
+
+### Added
+
+- **design-file-slides 1.** Turn an InDesign, Publisher, QuarkXPress, or PDF file into a PowerPoint in reading order. The deck stays on the Mac. This skill does not upload it.
+
 ## 2026-10-29
 
 ### Added

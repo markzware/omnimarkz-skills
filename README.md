@@ -84,6 +84,25 @@ https://markzware.com/downloads/skills/design-file-social-image.zip
 
 The Cursor command above is not the ChatGPT install. The image stays on the Mac.
 
+
+## Slides from a design file
+
+Turn an InDesign, Publisher, QuarkXPress, or PDF file into a PowerPoint in reading order. The deck stays on the Mac. This skill does not upload it.
+
+### Cursor
+
+```bash
+npx skills add markzware/omnimarkz-skills --skill design-file-slides -g
+```
+
+### ChatGPT
+
+ChatGPT installs the skill by downloading the zip:
+
+https://markzware.com/downloads/skills/design-file-slides.zip
+
+The Cursor command above is not the ChatGPT install. The PowerPoint file stays on the Mac.
+
 ## Changes
 
 See [CHANGELOG.md](CHANGELOG.md).

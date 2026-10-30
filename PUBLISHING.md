@@ -16,3 +16,4 @@ Follow this order. The skill version, the zip, the redirect, the catalog in this
 `design-file-to-wordpress` already has a published guide, so this repository does not create a second post for it and does not record a draft post id for it.
 
 `design-file-social-image` draft post id 63459, slug `design-file-social-image`, left as a draft. The tutorial URL is the redirect, not `https://markzware.com/?p=63459`.
+`design-file-slides` draft post id 63460, slug `design-file-slides`, left as a draft. The tutorial URL is the redirect, not `https://markzware.com/?p=63460`.
