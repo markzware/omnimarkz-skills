@@ -17,3 +17,4 @@ Follow this order. The skill version, the zip, the redirect, the catalog in this
 
 `design-file-social-image` draft post id 63459, slug `design-file-social-image`, left as a draft. The tutorial URL is the redirect, not `https://markzware.com/?p=63459`.
 `design-file-slides` draft post id 63460, slug `design-file-slides`, left as a draft. The tutorial URL is the redirect, not `https://markzware.com/?p=63460`.
+`design-file-to-canva` draft post id 63629, slug `design-file-to-canva`, left as a draft. The tutorial URL is the redirect, not `https://markzware.com/?p=63629`.

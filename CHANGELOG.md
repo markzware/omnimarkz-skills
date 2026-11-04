@@ -2,6 +2,12 @@
 
 Notable changes to the skills in this repository. Each skill has its own version number. A heading is the date that change landed on `main`.
 
+## 2026-11-04
+
+### Added
+
+- **design-file-to-canva 1.** Turn an InDesign, Publisher, QuarkXPress, or PDF file into a Canva design. The link includes the source wording and the file’s photographs. Those edits are saved as part of the run.
+
 ## 2026-10-30
 
 ### Added

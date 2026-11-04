@@ -30,6 +30,7 @@ Those commands install every skill in this repository. Each skill section below 
 - [What changed between two versions](#what-changed-between-two-versions)
 - [Social image and caption](#social-image-and-caption)
 - [Slides from a design file](#slides-from-a-design-file)
+- [Canva design from a design file](#canva-design-from-a-design-file)
 
 ## WordPress draft from a design file
 
@@ -107,6 +108,24 @@ ChatGPT installs the skill by downloading the zip:
 https://markzware.com/downloads/skills/design-file-slides.zip
 
 The Cursor command above is not the ChatGPT install. The PowerPoint file stays on the Mac.
+
+## Canva design from a design file
+
+Turn an InDesign, Publisher, QuarkXPress, or PDF file into a Canva design. Connect OmniMarkz from **OmniMarkz → Preferences → MCP** and connect the Canva MCP. The link includes the source wording and the file’s photographs. Those edits are saved as part of the run.
+
+### Cursor
+
+```bash
+npx skills add markzware/omnimarkz-skills --skill design-file-to-canva -g
+```
+
+### ChatGPT
+
+ChatGPT installs the skill by downloading the zip:
+
+https://markzware.com/downloads/skills/design-file-to-canva.zip
+
+The Cursor command above is not the ChatGPT install.
 
 ## Changes
 
