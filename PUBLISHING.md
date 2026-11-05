@@ -18,3 +18,15 @@ Follow this order. The skill version, the zip, the redirect, the catalog in this
 `design-file-social-image` draft post id 63459, slug `design-file-social-image`, left as a draft. The tutorial URL is the redirect, not `https://markzware.com/?p=63459`.
 `design-file-slides` draft post id 63460, slug `design-file-slides`, left as a draft. The tutorial URL is the redirect, not `https://markzware.com/?p=63460`.
 `design-file-to-canva` draft post id 63629, slug `design-file-to-canva`, left as a draft. The tutorial URL is the redirect, not `https://markzware.com/?p=63629`.
+
+## Claude directory
+
+Legal page: `https://markzware.com/legal/omnimarkz-agent-skills/` (WordPress page 63631). An anonymous request on 2026-11-05 returned HTTP 200 at that path. `https://markzware.com/support/` returned HTTP 200 with no redirect, so `supportUrl` is that address.
+
+This submission’s `.claude-plugin/plugin.json` version stays `1.0.0`. Any later commit on the tracked branch `main` raises that `version` before the commit. New directory versions use Scheduled check only. Auto-publish stays off.
+
+Example prompts. Each one needs OmniMarkz on a Mac or on Windows, connected from **OmniMarkz → Preferences → MCP** on a Mac or from **File → Settings… → MCP** on Windows, and a design file the reviewer can open.
+
+1. `Turn this InDesign file into a WordPress draft.`
+2. `What text and photos changed between these two PDFs?`
+3. `Turn this design file into a Canva design.`

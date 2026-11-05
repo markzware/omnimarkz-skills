@@ -2,6 +2,12 @@
 
 Notable changes to the skills in this repository. Each skill has its own version number. A heading is the date that change landed on `main`.
 
+## 2026-11-05
+
+### Changed
+
+- `.claude-plugin/plugin.json` lists the skills for the Claude directory at version 1.0.0. The README names both connect paths: **OmniMarkz → Preferences → MCP** on a Mac, and **File → Settings… → MCP** on Windows. Skill versions are unchanged.
+
 ## 2026-11-04
 
 ### Added

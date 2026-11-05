@@ -2,7 +2,7 @@
 
 Agent skills for OmniMarkz. This repository is the install and usage page.
 
-Connect OmniMarkz from **OmniMarkz → Preferences → MCP** before using a skill. OmniMarkz MCP is the local app you connect there. This repository does not give a remote URL for that MCP server.
+Connect OmniMarkz from **OmniMarkz → Preferences → MCP** on a Mac, or from **File → Settings… → MCP** on Windows, before using a skill. OmniMarkz MCP is the local app you connect there. This repository does not give a remote URL for that MCP server.
 
 ## Cursor
 
@@ -33,6 +33,8 @@ Those commands install every skill in this repository. Each skill section below 
 - [Canva design from a design file](#canva-design-from-a-design-file)
 
 ## WordPress draft from a design file
+
+The WordPress skill sends a draft to the site the user names. The application password stays in a file on that computer.
 
 ### Cursor
 
@@ -70,11 +72,11 @@ ChatGPT installs the skill by downloading the zip:
 
 https://markzware.com/downloads/skills/design-file-what-changed.zip
 
-The Cursor command above is not the ChatGPT install. The report stays on the Mac.
+The Cursor command above is not the ChatGPT install. The report stays on that computer.
 
 ## Social image and caption
 
-Make a social image and a caption from an InDesign, Publisher, QuarkXPress, or PDF file. You name the social site. The image stays on the Mac. This skill does not post to a social network.
+Make a social image and a caption from an InDesign, Publisher, QuarkXPress, or PDF file. You name the social site. The image stays on that computer. This skill does not post to a social network.
 
 ### Cursor
 
@@ -88,12 +90,12 @@ ChatGPT installs the skill by downloading the zip:
 
 https://markzware.com/downloads/skills/design-file-social-image.zip
 
-The Cursor command above is not the ChatGPT install. The image stays on the Mac.
+The Cursor command above is not the ChatGPT install. The image stays on that computer.
 
 
 ## Slides from a design file
 
-Turn an InDesign, Publisher, QuarkXPress, or PDF file into a PowerPoint in reading order. The deck stays on the Mac. This skill does not upload it.
+Turn an InDesign, Publisher, QuarkXPress, or PDF file into a PowerPoint in reading order. The deck stays on that computer. This skill does not upload it.
 
 ### Cursor
 
@@ -107,11 +109,11 @@ ChatGPT installs the skill by downloading the zip:
 
 https://markzware.com/downloads/skills/design-file-slides.zip
 
-The Cursor command above is not the ChatGPT install. The PowerPoint file stays on the Mac.
+The Cursor command above is not the ChatGPT install. The PowerPoint file stays on that computer.
 
 ## Canva design from a design file
 
-Turn an InDesign, Publisher, QuarkXPress, or PDF file into a Canva design. Connect OmniMarkz from **OmniMarkz → Preferences → MCP** and connect the Canva MCP. The link includes the source wording and the file’s photographs. Those edits are saved as part of the run.
+Turn an InDesign, Publisher, QuarkXPress, or PDF file into a Canva design. Connect OmniMarkz from **OmniMarkz → Preferences → MCP** on a Mac, or from **File → Settings… → MCP** on Windows, and connect the Canva MCP. The Canva skill sends the design to the Canva account the user connects. The link includes the source wording and the file’s photographs. Those edits are saved as part of the run.
 
 ### Cursor
 

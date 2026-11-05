@@ -75,11 +75,43 @@ def main():
         if not allowed(row.get("tutorial_url")) or not allowed(row.get("zip_url")):
             fail(f"{row.get('id')} catalog URL is not https on markzware.com")
 
-    listed = []
-    for rel in (".claude-plugin/marketplace.json", ".codex-plugin/plugin.json"):
-        collect_skills(json.loads((ROOT / rel).read_text()), listed)
-    if set(listed) != {f"skills/{name}" for name in folder_names}:
-        fail(f"plugin skill list {sorted(set(listed))} differs from folders")
+    expected = {f"skills/{name}" for name in folder_names}
+    manifests = (
+        ".claude-plugin/marketplace.json",
+        ".claude-plugin/plugin.json",
+        ".codex-plugin/plugin.json",
+    )
+    for rel in manifests:
+        path = ROOT / rel
+        if not path.is_file():
+            fail(f"missing {rel}")
+        data = json.loads(path.read_text())
+        listed = []
+        collect_skills(data, listed)
+        if set(listed) != expected:
+            fail(f"{rel} skill list {sorted(set(listed))} differs from folders {sorted(expected)}")
+    plugin = json.loads((ROOT / ".claude-plugin/plugin.json").read_text())
+    raw_skills = plugin.get("skills")
+    if not isinstance(raw_skills, list):
+        fail("plugin.json skills must be a list")
+    for item in raw_skills:
+        if not isinstance(item, str) or not item.startswith("./skills/"):
+            fail(f"plugin.json skill path must start with ./skills/: {item}")
+    directory_keys = {"privacyPolicyUrl", "termsOfServiceUrl", "supportUrl", "documentationUrl", "icon"}
+
+    def keys_of(value, found):
+        if isinstance(value, dict):
+            found.update(value)
+            for item in value.values():
+                keys_of(item, found)
+        elif isinstance(value, list):
+            for item in value:
+                keys_of(item, found)
+
+    market_keys = set()
+    keys_of(json.loads((ROOT / ".claude-plugin/marketplace.json").read_text()), market_keys)
+    if market_keys & directory_keys:
+        fail("marketplace.json contains a directory-only field")
 
     banned_name = "." + "mcp.json"
     for path in ROOT.rglob("*"):
