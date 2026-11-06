@@ -136,3 +136,5 @@ See [CHANGELOG.md](CHANGELOG.md).
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).
+
+The privacy page for these skills is https://markzware.com/legal/omnimarkz-agent-skills/. The license agreement is https://markzware.com/legal/license-agreement/.

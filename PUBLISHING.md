@@ -30,3 +30,9 @@ Example prompts. Each one needs OmniMarkz on a Mac or on Windows, connected from
 1. `Turn this InDesign file into a WordPress draft.`
 2. `What text and photos changed between these two PDFs?`
 3. `Turn this design file into a Canva design.`
+
+## Cursor Marketplace
+
+Logo copied from `https://markzware.com/wp-content/uploads/2020/05/OmniMarkz_favorite.png` into `assets/omnimarkz.png`.
+
+The submission commit is the commit that adds `.cursor-plugin/plugin.json`. Do not store a token in this file.

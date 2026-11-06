@@ -80,6 +80,7 @@ def main():
         ".claude-plugin/marketplace.json",
         ".claude-plugin/plugin.json",
         ".codex-plugin/plugin.json",
+        ".cursor-plugin/plugin.json",
     )
     for rel in manifests:
         path = ROOT / rel
@@ -90,13 +91,17 @@ def main():
         collect_skills(data, listed)
         if set(listed) != expected:
             fail(f"{rel} skill list {sorted(set(listed))} differs from folders {sorted(expected)}")
-    plugin = json.loads((ROOT / ".claude-plugin/plugin.json").read_text())
-    raw_skills = plugin.get("skills")
-    if not isinstance(raw_skills, list):
-        fail("plugin.json skills must be a list")
-    for item in raw_skills:
-        if not isinstance(item, str) or not item.startswith("./skills/"):
-            fail(f"plugin.json skill path must start with ./skills/: {item}")
+    def require_skill_prefix(rel):
+        plugin = json.loads((ROOT / rel).read_text())
+        raw_skills = plugin.get("skills")
+        if not isinstance(raw_skills, list):
+            fail(f"{rel} skills must be a list")
+        for item in raw_skills:
+            if not isinstance(item, str) or not item.startswith("./skills/"):
+                fail(f"{rel} skill path must start with ./skills/: {item}")
+
+    require_skill_prefix(".claude-plugin/plugin.json")
+    require_skill_prefix(".cursor-plugin/plugin.json")
     directory_keys = {"privacyPolicyUrl", "termsOfServiceUrl", "supportUrl", "documentationUrl", "icon"}
 
     def keys_of(value, found):

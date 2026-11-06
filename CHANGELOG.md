@@ -2,6 +2,12 @@
 
 Notable changes to the skills in this repository. Each skill has its own version number. A heading is the date that change landed on `main`.
 
+## 2026-11-06
+
+### Added
+
+- `.cursor-plugin/plugin.json` lists the skills for the Cursor Marketplace at version 1.0.0. Skill versions are unchanged.
+
 ## 2026-11-05
 
 ### Changed
