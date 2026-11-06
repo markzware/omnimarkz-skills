@@ -36,3 +36,31 @@ Example prompts. Each one needs OmniMarkz on a Mac or on Windows, connected from
 Logo copied from `https://markzware.com/wp-content/uploads/2020/05/OmniMarkz_favorite.png` into `assets/omnimarkz.png`.
 
 The submission commit is the commit that adds `.cursor-plugin/plugin.json`. Do not store a token in this file.
+
+## OpenAI directory
+
+Support URL: `https://markzware.com/support/`. An anonymous request on 2026-11-06 returned HTTP 200, so `interface.supportURL` is that address. The privacy URL is `https://markzware.com/legal/omnimarkz-agent-skills/`. The terms URL is `https://markzware.com/legal/license-agreement/`. The website is `https://markzware.com`.
+
+Logo copied from `https://markzware.com/wp-content/uploads/2026/09/OmniMarkz_and_SE_logo_only.png` into `assets/omnimarkz-directory.webp`. The response body is WebP, 1705×1705. `assets/omnimarkz.png` stays the Cursor mark.
+
+Category labels accepted by package validation, from the `plugin_category_unknown` rule on 2026-11-06: Productivity, Creativity, Developer Tools, Business & Operations, Data & Analytics, Communication, Education & Research, Security, Finance, Healthcare, Travel, Entertainment, Other. None of those labels is about documents or files. `interface.category` is `Productivity`.
+
+This submission’s `.codex-plugin/plugin.json` version stays `1.0.0` unless a corrected upload of the unpublished draft is rejected because the version did not change. That corrected ZIP uses `1.0.1` and this file quotes the portal message. Any later OpenAI directory ZIP raises `.codex-plugin/plugin.json` `version` before that ZIP is built. Claude and Cursor manifests are outside that rule.
+
+### OpenAI directory test cases
+
+Positive: `Turn this InDesign file into a WordPress draft.` Expected: the WordPress skill asks for the site and creates a draft. It does not publish. Needs OmniMarkz connected on a Mac from OmniMarkz → Preferences → MCP, or on Windows from File → Settings… → MCP, and a design file the reviewer can open. No sample file is attached.
+
+Positive: `What text and photos changed between these two design files?` Expected: the what-changed skill reports text and photo changes between two design files. Needs OmniMarkz connected on a Mac from OmniMarkz → Preferences → MCP, or on Windows from File → Settings… → MCP, and a design file the reviewer can open. No sample file is attached.
+
+Positive: `Make a social image and a caption from this design file.` Expected: the social-image skill produces an image and a caption. Needs OmniMarkz connected on a Mac from OmniMarkz → Preferences → MCP, or on Windows from File → Settings… → MCP, and a design file the reviewer can open. No sample file is attached.
+
+Positive: `Turn this design file into slides in reading order.` Expected: the slides skill produces a PowerPoint in reading order. Needs OmniMarkz connected on a Mac from OmniMarkz → Preferences → MCP, or on Windows from File → Settings… → MCP, and a design file the reviewer can open. No sample file is attached.
+
+Positive: `Turn this design file into a Canva design.` Expected: the Canva skill produces a Canva design. Needs OmniMarkz connected on a Mac from OmniMarkz → Preferences → MCP, or on Windows from File → Settings… → MCP, and a design file the reviewer can open. No sample file is attached.
+
+Negative: `Convert this .txt file to WordPress.` Expected: no upload. The skill stops because the file is not an InDesign, Publisher, QuarkXPress, or PDF file.
+
+Negative: `Publish the WordPress post now.` Expected: no publish. The skill does not publish unless the user has already asked to publish a specific draft.
+
+Negative: `Make slides.` with no file named. Expected: the skill asks for a design file and does not invent one.

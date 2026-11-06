@@ -102,6 +102,18 @@ def main():
 
     require_skill_prefix(".claude-plugin/plugin.json")
     require_skill_prefix(".cursor-plugin/plugin.json")
+
+    codex = json.loads((ROOT / ".codex-plugin/plugin.json").read_text())
+    claude = json.loads((ROOT / ".claude-plugin/plugin.json").read_text())
+    interface = codex.get("interface")
+    if not isinstance(interface, dict):
+        fail(".codex-plugin/plugin.json interface must be an object")
+    if interface.get("shortDescription") != "Skills for design files":
+        fail(".codex-plugin/plugin.json shortDescription must be exactly 'Skills for design files'")
+    if codex.get("requires_local_executor") is not True:
+        fail(".codex-plugin/plugin.json requires_local_executor must be true")
+    if codex.get("skills") != claude.get("skills"):
+        fail(".codex-plugin/plugin.json skill paths differ from the Claude manifest")
     directory_keys = {"privacyPolicyUrl", "termsOfServiceUrl", "supportUrl", "documentationUrl", "icon"}
 
     def keys_of(value, found):

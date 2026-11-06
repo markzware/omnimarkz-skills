@@ -8,6 +8,10 @@ Notable changes to the skills in this repository. Each skill has its own version
 
 - `.cursor-plugin/plugin.json` lists the skills for the Cursor Marketplace at version 1.0.0. Skill versions are unchanged.
 
+### Changed
+
+- `.codex-plugin/plugin.json` lists the skills for the OpenAI directory at version 1.0.0. The short description is `Skills for design files`. Skill versions are unchanged.
+
 ## 2026-11-05
 
 ### Changed

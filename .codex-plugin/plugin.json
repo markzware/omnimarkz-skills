@@ -3,6 +3,10 @@
   "marketplace": "omnimarkz-skills",
   "version": "1.0.0",
   "license": "Apache-2.0",
+  "description": "This plugin holds these OmniMarkz skills: design-file-to-wordpress, design-file-what-changed, design-file-social-image, design-file-slides, and design-file-to-canva. Each skill reads an InDesign, Publisher, QuarkXPress, or PDF file. Connect OmniMarkz on a Mac from OmniMarkz → Preferences → MCP, or on Windows from File → Settings… → MCP, before a skill can convert. The plugin is desktop-only and does not run in ChatGPT on the web.",
+  "author": {
+    "name": "Markzware"
+  },
   "skills": [
     "./skills/design-file-to-wordpress",
     "./skills/design-file-what-changed",
@@ -10,11 +14,33 @@
     "./skills/design-file-slides",
     "./skills/design-file-to-canva"
   ],
+  "requires_local_executor": true,
   "interface": {
     "displayName": "OmniMarkz",
-    "shortDescription": "OmniMarkz skills for design files.",
+    "shortDescription": "Skills for design files",
+    "longDescription": "This plugin holds these OmniMarkz skills: design-file-to-wordpress, design-file-what-changed, design-file-social-image, design-file-slides, and design-file-to-canva. Each skill reads an InDesign, Publisher, QuarkXPress, or PDF file. Connect OmniMarkz on a Mac from OmniMarkz → Preferences → MCP, or on Windows from File → Settings… → MCP, before a skill can convert. The plugin is desktop-only and does not run in ChatGPT on the web.",
     "developerName": "Markzware",
+    "category": "Productivity",
+    "capabilities": [],
     "websiteURL": "https://markzware.com",
+    "supportURL": "https://markzware.com/support/",
+    "privacyPolicyURL": "https://markzware.com/legal/omnimarkz-agent-skills/",
+    "termsOfServiceURL": "https://markzware.com/legal/license-agreement/",
+    "defaultPrompt": [
+      "Turn this InDesign file into a WordPress draft.",
+      "What text and photos changed between these two design files?",
+      "Make a social image and caption from this design file."
+    ],
+    "composerIcon": "./assets/omnimarkz-directory.webp",
+    "logo": "./assets/omnimarkz-directory.webp",
     "repository": "https://github.com/markzware/omnimarkz-skills"
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "countries": [],
+        "release_notes": "First directory release of the OmniMarkz skills. Desktop only. Connect OmniMarkz on a Mac from OmniMarkz → Preferences → MCP, or on Windows from File → Settings… → MCP, before a skill can convert."
+      }
+    }
   }
 }
